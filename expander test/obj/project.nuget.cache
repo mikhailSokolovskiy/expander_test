@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7AS3FSi2Z19mv49EHyQ/m3QG+SRgw6XyBY5gwBfs1ETioM3fPUTLZiTq6mTtnCv6jOEVbBpAD0uQFzP0DloSBg==",
+  "dgSpecHash": "otTMeIWaI6wIvuYsO6Lu3RfwdEFsrJURqYpoDmOBNPvudwvncxA2BppcVjVYsPf15aJYzdhnXFp45Qo1Mt+riA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mikhail\\RiderProjects\\expander test\\expander test\\expander test.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Mikhail\\.nuget\\packages\\avalonia.buildservices\\0.0.28\\avalonia.buildservices.0.0.28.nupkg.sha512",
     "C:\\Users\\Mikhail\\.nuget\\packages\\avalonia.controls.colorpicker\\11.0.2\\avalonia.controls.colorpicker.11.0.2.nupkg.sha512",
     "C:\\Users\\Mikhail\\.nuget\\packages\\avalonia.controls.datagrid\\11.0.2\\avalonia.controls.datagrid.11.0.2.nupkg.sha512",
+    "C:\\Users\\Mikhail\\.nuget\\packages\\avalonia.controls.treedatagrid\\11.0.1\\avalonia.controls.treedatagrid.11.0.1.nupkg.sha512",
     "C:\\Users\\Mikhail\\.nuget\\packages\\avalonia.desktop\\11.0.2\\avalonia.desktop.11.0.2.nupkg.sha512",
     "C:\\Users\\Mikhail\\.nuget\\packages\\avalonia.diagnostics\\11.0.2\\avalonia.diagnostics.11.0.2.nupkg.sha512",
     "C:\\Users\\Mikhail\\.nuget\\packages\\avalonia.fonts.inter\\11.0.2\\avalonia.fonts.inter.11.0.2.nupkg.sha512",

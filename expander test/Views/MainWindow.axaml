@@ -3,6 +3,8 @@
         xmlns:vm="using:expander_test.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:generic="clr-namespace:System.Collections.Generic;assembly=System.Collections"
+        xmlns:local="clr-namespace:expander_test.Models"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="expander_test.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -12,9 +14,21 @@
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
+        <vm:MainWindowViewModel />
     </Design.DataContext>
+    <StackPanel>
+        <TextBlock Text="{Binding CurrentNode, Mode=TwoWay}" x:Name="Block" IsVisible="False"></TextBlock>
+        <TextBlock Text="{Binding CurrentNode, Mode=TwoWay}"></TextBlock>
+        <TreeView x:Name="TreeView" ItemsSource="{Binding Nodes}">
+            <TreeView.ItemTemplate>
+                <TreeDataTemplate ItemsSource="{Binding SubNodes}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}" PointerPressed="InputElement_OnPointerPressed" />
+                    </StackPanel>
+                </TreeDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+        <Button Margin="10" Content="Создать"></Button>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
+    </StackPanel>
 </Window>
